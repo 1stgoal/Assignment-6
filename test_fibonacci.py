@@ -9,6 +9,17 @@ def test_float():
         list(Fibonacci(1.5))
 
 
+"""Tests for the value zero entered"""
+
+
 def test_input_zero():
     fib_list = [num for num in Fibonacci(0)]
     assert fib_list == [0]
+
+
+"""Tests for the value one entered"""
+
+
+def test_input_one():
+    fib_list = [num for num in Fibonacci(1)]
+    assert fib_list == [0, 1]
