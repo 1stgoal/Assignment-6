@@ -24,9 +24,18 @@ def test_input_one():
     fib_list = [num for num in Fibonacci(1)]
     assert fib_list == [0, 1]
 
-    """Tests for the value two entered"""
+
+"""Tests for the value two entered"""
 
 
 def test_input_two():
     fib_list = [num for num in Fibonacci(2)]
     assert fib_list == [0, 1, 1]
+
+
+"""Tests for the value Four entered"""
+
+
+def test_input_four():
+    fib_list = [num for num in Fibonacci(4)]
+    assert fib_list == [0, 1, 1, 2, 3]
