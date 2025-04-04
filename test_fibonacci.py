@@ -39,3 +39,11 @@ def test_input_two():
 def test_input_four():
     fib_list = [num for num in Fibonacci(4)]
     assert fib_list == [0, 1, 1, 2, 3]
+
+
+"""Tests for the value Ten entered"""
+
+
+def test_input_ten():
+    fib_list = [num for num in Fibonacci(10)]
+    assert fib_list == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
