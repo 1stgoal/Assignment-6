@@ -47,3 +47,11 @@ def test_input_four():
 def test_input_ten():
     fib_list = [num for num in Fibonacci(10)]
     assert fib_list == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+
+"""Tests for a negative value entered"""
+
+
+def test_input_negative():
+    fib_list = [num for num in Fibonacci(-1)]
+    assert fib_list == []

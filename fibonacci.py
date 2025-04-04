@@ -1,6 +1,6 @@
 class Fibonacci:
     def __init__(self, n):
-        if not isinstance(n, int) or n < 0:  # checks if the entered values are integer and not negative
+        if not isinstance(n, int):  # checks if the entered values are integer
             raise ValueError("only integer values to be entered")
 
         """Creating variables"""
@@ -14,10 +14,11 @@ class Fibonacci:
     def __iter__(self):
         return self
 
-    """Generates the next Fibonacci number and raises StopIteration when the sequence ends."""
+    """Generates the next Fibonacci number. Stops iteration when the 
+        sequence ends or if initialized with a negative value."""
 
     def __next__(self):
-        if self.count > self.n:
+        if self.count > self.n or self.n < 0:
             raise StopIteration
 
         fib_number = self.a
